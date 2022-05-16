@@ -1,0 +1,239 @@
+body {
+    background-image: url(https://cdn.glitch.me/ebb6cba1-039e-4e28-82a8-159d29e5bcdd%2F3.jpg?v=1639332252369);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2a425a;
+    height: 100vh;
+    color: #fff;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(2, 16, 29, 0.6), rgba(22, 14, 51, 0.7));
+padding: 20px;
+
+    margin: 30px 100px 40px;
+    border-radius: 50px;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #input {
+        background-color: rgba(142, 127, 161, 0.3);
+        background-color: rgb(205,212,218,0.7);
+        border-radius: 20px;
+        border: 3px solid #EBEBEB;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;font-style: italic;
+        color: #0b1f39;
+        font-weight: bold;
+        }
+
+    #input:focus {
+        background-color: rgb(255, 255, 255, 0.8);
+    }    
+
+    #top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    
+    #now {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #city {
+        font-size: 42px;
+     
+        text-shadow: #0b1f39 2px 3px;
+
+    }
+
+    #temperature {
+       margin: 0px;
+        font-size: 120px;
+        text-shadow: #0b1f39 5px 10px;
+    }
+
+    #feelsLike {
+        text-shadow: #0b1f39 2px 3px;
+        font-size: 20px;
+    }
+
+    #wind, #variation {
+        display: flex;
+        margin-right: 10px;
+        font-size: 22px;
+    }
+    #speed, #humidity, #pressure, #min, #max {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #date {
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+#time {
+    font-size: 35px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+    #conditions {
+        font-size: 45px;
+        font-weight: bolder;
+        text-align: center;
+        text-shadow: #0b1f39 4px 7px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .name {
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+        @media all and (max-width: 800px) {
+        #city {
+            font-size: 35px;
+        }
+
+        #temperature {
+            font-size: 100px;
+        }
+
+        #conditions {
+            font-size: 40px;
+        }
+
+        #date {
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #time {
+            font-size: 30px;
+          
+        }
+        #speed, #humidity, #pressure, #min, #max {
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 15px;
+        }
+    }
+
+    @media all and (max-width: 500px) {
+        #container {
+            margin: 10px 10px 20px;
+            }
+        
+            #city {
+                font-size: 30px;
+            }
+    
+            #temperature {
+                font-size: 80px;
+            }
+    
+            #conditions {
+                font-size: 28px;
+            }
+    
+            #date {
+                font-size: 15px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            #time {
+                font-size: 25px;
+             
+            }
+            #speed, #humidity, #pressure, #min, #max {
+                padding-right: 4px;
+                padding-left: 4px;
+                font-size: 14px;
+            }    
+
+    }
+
+    @media all and (max-width: 320px) {
+        #container {
+            margin: 10px;
+            }
+
+            #input {
+                padding: 18px;
+                font-size: 16px;
+                }
+        
+            #city {
+                font-size: 25px;
+            }
+    
+            #date {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            #time {
+                font-size: 20px;
+                margin: 0px;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .name {
+                font-size: 10px;
+            }
+    }
+
+    @media all and (max-width: 300px) {
+        
+        #input {
+            padding: 15px;
+            font-size: 15px;
+            }
+    
+        #city {
+            font-size: 21px;
+        }
+        #time {
+            font-size: 23px;
+          
+        }
+
+        #feelsLike {
+            font-size: 14px;
+        }
+        #date {
+            font-size: 13px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        #wind {
+            padding: 10px;
+        }
+        #speed, #humidity, #pressure, #min, #max {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        #min, #max {
+            padding: 10px;
+        }
+        
+    }
